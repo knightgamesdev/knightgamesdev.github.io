@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Solo game developer who loves all games, and works hard to make the best ones ever.">
+    <meta name="author" content="Knight Games">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight Games</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="static/favicon.png">
+
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap 5 CDN Links -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/styles/index_style.css">
+
+</head>
+
+
+
+<body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand" id="navbar">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li>
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#games">Games</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="page">
+            <img src="static/logo.png" class="logo">
+            <div class="wrapper">
+                <ul class="dynamic-txts">
+                  <li><span>Game Developer</span></li>
+                </ul>
+              </div>
+            <div class="social-links">
+              <ul>
+                <li><a href="https://www.youtube.com/channel/UCs0rsl9bNEV1Ccn8OjUlRxQ" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://knightgames.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a></li>
+                <li><a href="https://twitter.com/_knightgames" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+              </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="page">
+            <div class="about-header">Hello! You can call me <b>Knight</b>.</div>
+            <div class="about-text">
+                I'm a solo indie game developer who loves all games, and works hard to make the best ones ever.
+                <br><br>You can check out my blog to know what I'm up to lately.</div>  
+            <button class="blog-button">  
+                <a href="blog.html">Blog <i class="fa-solid fa-arrow-right"></i>
+            </a> </button>
+        </div>
+    </section>
+
+    <section id="games">
+        <div class="page">
+
+            <div id="game-image-popup" class="game-image-popup">
+                <span class="popup-close" id="popup-close"><i class="fa-solid fa-xmark"></i></span>
+                <div class="popup-content">
+                    <span class="popup-arrow-left popup-arrow-highres" onclick="slideLeft()" ><i class="fa-solid fa-angle-left" id="popup-arrow-left1"></i></span>
+                    <img class="popup-image" id="popup-image">
+                    <span class="popup-arrow-right popup-arrow-highres" onclick="slideRight()" ><i class="fa-solid fa-angle-right" id="popup-arrow-right1"></i></span>
+                </div>
+                <div class="popup-arrow-lowres">    
+                    <span class="popup-arrow-left" onclick="slideLeft()"><i class="fa-solid fa-angle-left"  id="popup-arrow-left2"></i></span>
+                    <span class="popup-arrow-right"  onclick="slideRight()"><i class="fa-solid fa-angle-right" id="popup-arrow-right2"></i></span>
+                </div>
+            </div>
+
+            
+            <!--Recycle Factory Simulator-->
+            <div class="game">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/recyclefactorysimulator/recyclefactorysimulatorlogo.png" class="gamelogomain">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Recycle Factory Simulator &nbsp;<i class="fa-brands fa-windows"></i></span>
+                            <span class="game-info-text">Buy junk, recycle and sell! Unlock new machines, produce products and upgrade your factory!
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Simulation</li>
+                                    <li>Casual</li>
+                                    <li>Colorful</li>
+                                </ul>
+                            </div>
+                            <div class="game-buttons">
+                                <button style="background: linear-gradient(to bottom right, #00132e 0%, #002269 40%, #00528d 75%, #00b0ff 100%);" class="game-button"> 
+                                    <a style="text-shadow: 0px 0px 2px #000000;" href="https://store.steampowered.com/app/3196810/Recycle_Factory_Simulator/" target="_blank">Wishlist On <i class="fa-brands fa-steam"></i> <br>
+                                </a> </button>
+                                <button class="game-button">  
+                                    <a href="games/recyclefactorysimulator.html">View More <i class="fa-solid fa-arrow-right"></i>
+                                </a> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <ul>
+                            <li><img class="recyclefactorysimulator_images" id="recyclefactorysimulator_images_0" onclick="openImagePopup(this.id)" src="static/games/recyclefactorysimulator/SS/SS1.png"></li>
+                            <li><img class="recyclefactorysimulator_images" id="recyclefactorysimulator_images_1" onclick="openImagePopup(this.id)" src="static/games/recyclefactorysimulator/SS/SS2.png"></li>
+                            <li><img class="recyclefactorysimulator_images" id="recyclefactorysimulator_images_2" onclick="openImagePopup(this.id)" src="static/games/recyclefactorysimulator/SS/SS3.png"></li>
+                            <li><img class="recyclefactorysimulator_images" id="recyclefactorysimulator_images_3" onclick="openImagePopup(this.id)" src="static/games/recyclefactorysimulator/SS/SS4.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Intruder-->
+            <div class="game">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/intruder/intruderlogo.png" class="gamelogomain">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Intruder &nbsp;<i class="fa-brands fa-windows"></i></span>
+                            <span class="game-info-text">You started working from home and bought a new house, far from the city.
+                                                        But something seems off about it. Just be cautious, and don't believe in fairytales.
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Horror</li>
+                                    <li>PSX</li>
+                                    <li>Retro</li>
+                                </ul>
+                            </div>
+                            <div class="game-buttons">
+                                <button class="game-button"> 
+                                    <a href="https://knightgames.itch.io/intruder" target="_blank">Play From <i class="fa-brands fa-itch-io"></i>
+                                </a> </button>
+                                <button class="game-button">  
+                                    <a href="games/intruder.html">View More <i class="fa-solid fa-arrow-right"></i>
+                                </a> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <ul>
+                            <li><img class="intruder_images" id="intruder_images_0" onclick="openImagePopup(this.id)" src="static/games/intruder/SS/SS1.png"></li>
+                            <li><img class="intruder_images" id="intruder_images_1" onclick="openImagePopup(this.id)" src="static/games/intruder/SS/SS2.png"></li>
+                            <li><img class="intruder_images" id="intruder_images_2" onclick="openImagePopup(this.id)" src="static/games/intruder/SS/SS3.png"></li>
+                            <li><img class="intruder_images" id="intruder_images_3" onclick="openImagePopup(this.id)" src="static/games/intruder/SS/SS5.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="game-menu">
+                <span class="game-menu-header">Game Jam Games &nbsp;<i class="fa-solid fa-jar"></i></span>  
+                <div class="game-menu-games"> 
+                    <ul>
+                        <li><img src="static/games/nomoresun/nomoresunlogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="nomoresun"></li>
+                        <li><img src="static/games/yolunuaydinlat/yolunuaydinlatlogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="yolunuaydinlat"></li>
+                        <li><img src="static/games/dimensionup/dimensionuplogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="dimensionup"></li>
+                        <li><img src="static/games/yenidenbasla/yenidenbaslalogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="yenidenbasla"></li>
+                        <li><img src="static/games/robotarena/robotarenalogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="robotarena"></li>
+                        <li><img src="static/games/c4m/c4mlogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="c4m"></li>
+                        <li><img src="static/games/nanobot/nanobotlogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="nanobot"></li>
+                        <li><img src="static/games/keepsailing/keepsailinglogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="keepsailing"></li>
+                        <li><img src="static/games/youaretheainow/youaretheainowlogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="youaretheainow"></li>
+                        <li><img src="static/games/lonemage/lonemagelogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="lonemage"></li>
+                        <li><img src="static/games/cepheyeyolculuk/cepheyeyolculuklogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="cepheyeyolculuk"></li>
+                    </ul>
+                </div>   
+            </div>              
+            
+            <!--No More Sun-->
+            <div class="game" id="nomoresun_panel">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/nomoresun/nomoresunlogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">No More Sun &nbsp; <i class="fa-brands fa-windows"></i></span>
+                            <span class="game-info-text">Made for a local Game Jam - Turkish Only.
+                                <br> In a World that Sun doesn't exist, use your scanner to lighten up your way!
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>FPS</li>
+                                    <li>Puzzle</li>
+                                    <li>Speedrun</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://knightgames.itch.io/no-more-sun" target="_blank">Play From <i class="fa-brands fa-itch-io"></i>
+                                </a> </button>
+                                <ul>
+                                    <li><a href="https://www.youtube.com/watch?v=tIT5Y34UHKI" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <iframe class="game-video" src="https://www.youtube.com/embed/tIT5Y34UHKI?si=HFBnZJQkA4RBaX7u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <ul>
+                            <li><img class="nomoresun_images" id="nomoresun_images_0" onclick="openImagePopup(this.id)" src="static/games/nomoresun/SS/SS1.png"></li>
+                            <li><img class="nomoresun_images" id="nomoresun_images_1" onclick="openImagePopup(this.id)" src="static/games/nomoresun/SS/SS2.png"></li>
+                            <li><img class="nomoresun_images" id="nomoresun_images_2" onclick="openImagePopup(this.id)" src="static/games/nomoresun/SS/SS3.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Yolunu Aydinlat-->
+            <div class="game" id="yolunuaydinlat_panel" style="display:none;"">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/yolunuaydinlat/yolunuaydinlatlogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Yolunu Aydınlat &nbsp; <i class="fa-brands fa-windows"></i></span>
+                            <span class="game-info-text">Made for a local Game Jam - Turkish Only. Ranked 4th in the jam <i style="color: #CD7F32;" class="fa-solid fa-trophy"></i>
+                                <br> Position your light sources to create shadows. Use the shadows as platforms to reach the end point!
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Platformer</li>
+                                    <li>Puzzle</li>
+                                    <li>Low poly</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://knightgames.itch.io/yolunu-aydinlat" target="_blank">Play From <i class="fa-brands fa-itch-io"></i>
+                                </a> </button>
+                                <ul>
+                                    <li><a href="https://www.youtube.com/watch?v=SiN0JqtAFYM" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <iframe class="game-video" src="https://www.youtube.com/embed/SiN0JqtAFYM?si=TDRIa_b-rwOkDzm2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <ul>
+                            <li><img class="yolunuaydinlat_images" id="yolunuaydinlat_images_0" onclick="openImagePopup(this.id)" src="static/games/yolunuaydinlat/SS/SS1.png"></li>
+                            <li><img class="yolunuaydinlat_images" id="yolunuaydinlat_images_1" onclick="openImagePopup(this.id)" src="static/games/yolunuaydinlat/SS/SS2.png"></li>
+                            <li><img class="yolunuaydinlat_images" id="yolunuaydinlat_images_2" onclick="openImagePopup(this.id)" src="static/games/yolunuaydinlat/SS/SS3.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Dimension Up-->
+            <div class="game" id="dimensionup_panel" style="display:none;">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/dimensionup/dimensionuplogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Dimension Up &nbsp; <i class="fa-brands fa-windows"></i> <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-linux"></i> </span>
+                            <span class="game-info-text">Toggle between 2d and 3d to scale. Avoid obstacles and reach the end point!
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Play On Browser</li>
+                                    <li>Platformer</li>
+                                    <li>Puzzle</li>
+                                    <li>Low poly</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://knightgames.itch.io/dimension-up" target="_blank">Play From <i class="fa-brands fa-itch-io"></i>
+                                </a> </button>
+                                
+                                <ul>
+                                    <li> &nbsp; </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <ul>
+                            <li><img class="dimensionup_images" id="dimensionup_images_0" onclick="openImagePopup(this.id)" src="static/games/dimensionup/SS/SS1.png"></li>
+                            <li><img class="dimensionup_images" id="dimensionup_images_1" onclick="openImagePopup(this.id)" src="static/games/dimensionup/SS/SS2.png"></li>
+                            <li><img class="dimensionup_images" id="dimensionup_images_2" onclick="openImagePopup(this.id)" src="static/games/dimensionup/SS/SS3.png"></li>
+                            <li><img class="dimensionup_images" id="dimensionup_images_3" onclick="openImagePopup(this.id)" src="static/games/dimensionup/SS/SS4.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+            <!--Yeniden Basla-->
+            <div class="game" id="yenidenbasla_panel" style="display:none;">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/yenidenbasla/yenidenbaslalogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Yeniden Basla &nbsp; <i class="fa-brands fa-windows"></i>  </span>
+                            <span class="game-info-text">Made for a local Game Jam - Turkish Only. Ranked 3rd in the jam <i style="color: #CD7F32;" class="fa-solid fa-trophy"></i>
+                                <br> Navigate through the invisible levels with the ice cube. Leave water splatters along the path, and make it visible.
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Play On Browser</li>
+                                    <li>3D</li>
+                                    <li>Puzzle</li>
+                                    <li>Low poly</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://knightgames.itch.io/yeniden-basla" target="_blank">Play From <i class="fa-brands fa-itch-io"></i>
+                                </a> </button>
+                                
+                                <ul>
+                                    <li> &nbsp; </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <ul>
+                            <li><img class="yenidenbasla_images" id="yenidenbasla_images_0" onclick="openImagePopup(this.id)" src="static/games/yenidenbasla/SS/SS1.png"></li>
+                            <li><img class="yenidenbasla_images" id="yenidenbasla_images_1" onclick="openImagePopup(this.id)" src="static/games/yenidenbasla/SS/SS2.png"></li>
+                            <li><img class="yenidenbasla_images" id="yenidenbasla_images_2" onclick="openImagePopup(this.id)" src="static/games/yenidenbasla/SS/SS3.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Robot Arena-->
+            <div class="game" id="robotarena_panel" style="display:none;">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/robotarena/robotarenalogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Robot Arena &nbsp; <i class="fa-brands fa-windows"></i> <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-linux"></i> </span>
+                            <span class="game-info-text">Automatically shoot with the rhythm and survive until song ends!
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Play On Browser</li>
+                                    <li>Rhythm</li>
+                                    <li>FPS</li>
+                                    <li>Sci-Fi</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://knightgames.itch.io/robot-arena" target="_blank">Play From <i class="fa-brands fa-itch-io"></i>
+                                </a> </button>
+                                <ul>
+                                    <li><a href="https://www.youtube.com/watch?v=JFOKXpHJUM8" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <iframe class="game-video" src="https://www.youtube.com/embed/JFOKXpHJUM8?si=vvcBJTI2JL_uWUnK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <ul>
+                            <li><img class="robotarena_images" id="robotarena_images_0" onclick="openImagePopup(this.id)" src="static/games/robotarena/SS/SS1.png"></li>
+                            <li><img class="robotarena_images" id="robotarena_images_1" onclick="openImagePopup(this.id)" src="static/games/robotarena/SS/SS2.png"></li>
+                            <li><img class="robotarena_images" id="robotarena_images_2" onclick="openImagePopup(this.id)" src="static/games/robotarena/SS/SS3.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--C4M-->
+            <div class="game" id="c4m_panel" style="display:none;">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/c4m/c4mlogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">C4M &nbsp; <i class="fa-brands fa-windows"></i> </span>
+                            <span class="game-info-text">Made for a local Game Jam - Turkish Only. Made it to the first 50 of 403 games in the jam.
+                                Join an experiment and use the prototype C4M machine to view another dimension!
+                                Solve puzzles and finish the game!
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>FPS</li>
+                                    <li>Puzzle</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://knightgames.itch.io/c4m" target="_blank">Play From <i class="fa-brands fa-itch-io"></i>
+                                </a> </button>
+                                <ul>
+                                    <li><a href="https://youtu.be/07_d03ajvLI" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <iframe class="game-video" src="https://www.youtube.com/embed/07_d03ajvLI?si=MfrLLSTzvlRu9_Fu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <ul>
+                            <li><img class="c4m_images" id="c4m_images_0" onclick="openImagePopup(this.id)" src="static/games/c4m/SS/SS1.png"></li>
+                            <li><img class="c4m_images" id="c4m_images_1" onclick="openImagePopup(this.id)" src="static/games/c4m/SS/SS2.png"></li>
+                            <li><img class="c4m_images" id="c4m_images_2" onclick="openImagePopup(this.id)" src="static/games/c4m/SS/SS3.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Nanobot-->
+            <div class="game" id="nanobot_panel" style="display:none;">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/nanobot/nanobotlogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Nanobot &nbsp; <i class="fa-brands fa-windows"></i> <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-linux"></i> </span>
+                            <span class="game-info-text">Made for a local Game Jam - Turkish Only. This time you play as a robot. 
+                                Direct the mini bots to correct destinations to pass the level!
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Play On Browser</li>
+                                    <li>Top-Down Shooter</li>
+                                    <li>Puzzle</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://knightgames.itch.io/nanobot" target="_blank">Play From <i class="fa-brands fa-itch-io"></i>
+                                </a> </button>
+                                
+                                <ul>
+                                    <li> &nbsp; </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <ul>
+                            <li><img class="nanobot_images" id="nanobot_images_0" onclick="openImagePopup(this.id)" src="static/games/nanobot/SS/SS1.png"></li>
+                            <li><img class="nanobot_images" id="nanobot_images_1" onclick="openImagePopup(this.id)" src="static/games/nanobot/SS/SS2.png"></li>
+                            <li><img class="nanobot_images" id="nanobot_images_2" onclick="openImagePopup(this.id)" src="static/games/nanobot/SS/SS3.png"></li>
+                            <li><img class="nanobot_images" id="nanobot_images_3" onclick="openImagePopup(this.id)" src="static/games/nanobot/SS/SS4.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Keep Sailing-->
+            <div class="game" id="keepsailing_panel" style="display:none;">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/keepsailing/keepsailinglogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Keep Sailing &nbsp;  <i class="fa-brands fa-windows"></i> <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-linux"></i>  </span>
+                            <span class="game-info-text">Your ship is sinking! Rescue boat only has a limited space. 
+                                Make the right decisions to survive until the end!
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Play On Browser</li>
+                                    <li>Interactive Fiction</li>
+                                    <li>Survival</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://knightgames.itch.io/keep-sailing" target="_blank">Play From <i class="fa-brands fa-itch-io"></i>
+                                </a> </button>
+                                <ul>
+                                    <li> &nbsp;</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <ul>
+                            <li><img class="keepsailing_images" id="keepsailing_images_0" onclick="openImagePopup(this.id)" src="static/games/keepsailing/SS/SS1.png"></li>
+                            <li><img class="keepsailing_images" id="keepsailing_images_1" onclick="openImagePopup(this.id)" src="static/games/keepsailing/SS/SS2.png"></li>
+                            <li><img class="keepsailing_images" id="keepsailing_images_2" onclick="openImagePopup(this.id)" src="static/games/keepsailing/SS/SS3.png"></li>  
+                            <li><img class="keepsailing_images" id="keepsailing_images_3" onclick="openImagePopup(this.id)" src="static/games/keepsailing/SS/SS4.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--You Are The AI Now-->
+            <div class="game" id="youaretheainow_panel" style="display:none;">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/youaretheainow/youaretheainowlogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">You Are The AI Now &nbsp; <i class="fa-brands fa-windows"></i> <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-linux"></i> </span>
+                            <span class="game-info-text">Year 2077. AI has won. Humanity lost. 
+                                You are the last human on earth.
+                                AI has only one enemy:  <b>Captcha.</b> 
+                                Solve captchas for them to survive. </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Play On Browser</li>
+                                    <li>Puzzle</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://knightgames.itch.io/you-are-the-ai-now" target="_blank">Play From <i class="fa-brands fa-itch-io"></i>
+                                </a> </button>
+                                <ul>
+                                    <li><a href="https://youtu.be/FEIkhWNN5vo" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <iframe class="game-video" src="https://www.youtube.com/embed/FEIkhWNN5vo?si=_3Pqvy3zj2shnbMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <ul>
+                            <li><img class="youaretheainow_images" id="youaretheainow_images_0" onclick="openImagePopup(this.id)" src="static/games/youaretheainow/SS/SS1.png"></li>
+                            <li><img class="youaretheainow_images" id="youaretheainow_images_1" onclick="openImagePopup(this.id)" src="static/games/youaretheainow/SS/SS2.png"></li>
+                            <li><img class="youaretheainow_images" id="youaretheainow_images_2" onclick="openImagePopup(this.id)" src="static/games/youaretheainow/SS/SS3.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Lone Mage-->
+            <div class="game" id="lonemage_panel" style="display:none;">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/lonemage/lonemagelogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Lone Mage &nbsp; <i class="fa-brands fa-windows"></i> <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-linux"></i> </span>
+                            <span class="game-info-text">Your mage has been surrounded.
+                                Cast the spells by typing it on the keyboard to beat the monsters.
+                                Survive for 2 minutes to win!</span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Play On Browser</li>
+                                    <li>Typing</li>
+                                    <li>Fantasy</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://knightgames.itch.io/lone-mage" target="_blank">Play From <i class="fa-brands fa-itch-io"></i>
+                                </a> </button>
+                                <ul>
+                                    <li><a href="https://www.youtube.com/watch?v=fxABY9d3KAs" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <iframe class="game-video" src="https://www.youtube.com/embed/fxABY9d3KAs?si=CnzrgG4JB1p8y_1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <ul>
+                            <li><img class="lonemage_images" id="lonemage_images_0" onclick="openImagePopup(this.id)" src="static/games/lonemage/SS/SS1.png"></li>
+                            <li><img class="lonemage_images" id="lonemage_images_1" onclick="openImagePopup(this.id)" src="static/games/lonemage/SS/SS2.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Cepheye Yolculuk-->
+            <div class="game" id="cepheyeyolculuk_panel" style="display:none;">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/cepheyeyolculuk/cepheyeyolculuklogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Cepheye Yolculuk &nbsp; <i class="fa-brands fa-windows"></i> <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-linux"></i> </span>
+                            <span class="game-info-text">Made for a local Game Jam - Turkish Only.
+                                Theme was "100th Anniversary Of The Republic Of Türkiye".
+                                The game was made in less than 48 hours.</span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Play On Browser</li>
+                                    <li>Interactive Fiction</li>
+                                    <li>Historical</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://knightgames.itch.io/cepheye-yolculuk" target="_blank">Play From <i class="fa-brands fa-itch-io"></i>
+                                </a> </button>
+                                <ul>
+                                    <li>&nbsp;</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-menu">
+                <span class="game-menu-header">Mobile Games &nbsp;<i class="fa-solid fa-mobile-retro"></i></span>  
+                <div class="game-menu-games"> 
+                    <ul>
+                        <li><img src="static/games/spiralracer/spiralracerlogo.png" onclick="mobileGameMenu(this.id)" class="game-menu-logo" id="spiralracer"></li>
+                        <li><img src="static/games/reflexbullet/reflexbulletlogo.png" onclick="mobileGameMenu(this.id)" class="game-menu-logo" id="reflexbullet"></li>
+                        <li><img src="static/games/marblebounce/marblebouncelogo.png" onclick="mobileGameMenu(this.id)" class="game-menu-logo" id="marblebounce"></li>
+                        <li><img src="static/games/giftrun/giftrunlogo.png" onclick="mobileGameMenu(this.id)" class="game-menu-logo" id="giftrun"></li>
+                    </ul>
+                </div>   
+            </div>  
+
+            <!--Spiral Racer-->
+            <div class="game" id="spiralracer_panel">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/spiralracer/spiralracerlogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Spiral Racer &nbsp; <i class="fa-brands fa-android"></i> </span>
+                            <span class="game-info-text">Drive through spiral, unlock new cars and levels!
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Play On Mobile</li>
+                                    <li>Racing</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://play.google.com/store/apps/details?id=com.KnightGames.SpiralRacer" target="_blank">Play From <i class="fa-brands fa-google-play"></i>
+                                </a> </button>
+                                <ul>
+                                    <li><a href="https://knightgames.itch.io/spiral-racer" target="_blank"><i class="fa-brands fa-itch-io"></i></a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=oYed-pHai5M" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <iframe class="game-video" src="https://www.youtube.com/embed/oYed-pHai5M?si=3HpPdfTa0-qJSd3S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <ul>
+                            <li><img class="spiralracer_images" id="spiralracer_images_0" onclick="openImagePopup(this.id)" src="static/games/spiralracer/SS/SS1.png"></li>
+                            <li><img class="spiralracer_images" id="spiralracer_images_1" onclick="openImagePopup(this.id)" src="static/games/spiralracer/SS/SS2.png"></li>
+                            <li><img class="spiralracer_images" id="spiralracer_images_2" onclick="openImagePopup(this.id)" src="static/games/spiralracer/SS/SS3.png"></li>
+                            <li><img class="spiralracer_images" id="spiralracer_images_3" onclick="openImagePopup(this.id)" src="static/games/spiralracer/SS/SS4.png"></li>
+                            <li><img class="spiralracer_images" id="spiralracer_images_4" onclick="openImagePopup(this.id)" src="static/games/spiralracer/SS/SS5.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Reflex Bullet-->
+            <div class="game" id="reflexbullet_panel" style="display:none;">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/reflexbullet/reflexbulletlogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Reflex Bullet &nbsp; <i class="fa-brands fa-android"></i> </span>
+                            <span class="game-info-text">Aim and shoot the stickman!
+                                You only have a few bullets, pass as many levels as you can!
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Play On Mobile</li>
+                                    <li>Shooter</li>
+                                    <li>Puzzle</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://play.google.com/store/apps/details?id=com.KnightGames.ReflexBullet" target="_blank">Play From <i class="fa-brands fa-google-play"></i>
+                                </a> </button>
+                                <ul>
+                                    <li><a href="https://knightgames.itch.io/reflex-bullet" target="_blank"><i class="fa-brands fa-itch-io"></i></a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=gzj5oRwTPb0" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <iframe class="game-video" src="https://www.youtube.com/embed/gzj5oRwTPb0?si=aavcEtuVD4ew6yqj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <ul>
+                            <li><img class="reflexbullet_images" id="reflexbullet_images_0" onclick="openImagePopup(this.id)" src="static/games/reflexbullet/SS/SS1.png"></li>
+                            <li><img class="reflexbullet_images" id="reflexbullet_images_1" onclick="openImagePopup(this.id)" src="static/games/reflexbullet/SS/SS2.png"></li>
+                            <li><img class="reflexbullet_images" id="reflexbullet_images_2" onclick="openImagePopup(this.id)" src="static/games/reflexbullet/SS/SS3.png"></li>
+                            <li><img class="reflexbullet_images" id="reflexbullet_images_3" onclick="openImagePopup(this.id)" src="static/games/reflexbullet/SS/SS4.png"></li>
+                            <li><img class="reflexbullet_images" id="reflexbullet_images_4" onclick="openImagePopup(this.id)" src="static/games/reflexbullet/SS/SS5.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Marble Bounce-->
+            <div class="game" id="marblebounce_panel" style="display:none;">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/marblebounce/marblebouncelogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Marble Bounce &nbsp; <i class="fa-brands fa-android"></i> </span>
+                            <span class="game-info-text">Bounce the balls on the blocks to earn money.
+                                Earn more, add more balls and open more blocks!
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Play On Mobile</li>
+                                    <li>Idle</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://play.google.com/store/apps/details?id=com.KnightGames.MarbleBounce" target="_blank">Play From <i class="fa-brands fa-google-play"></i>
+                                </a> </button>
+                                <ul>
+                                    <li><a href="https://knightgames.itch.io/marble-bounce" target="_blank"><i class="fa-brands fa-itch-io"></i></a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=-jI0Thq0Pn0" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <iframe class="game-video" src="https://www.youtube.com/embed/-jI0Thq0Pn0?si=iGM7_-MLHiwfP8Bv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <ul>
+                            <li><img class="marblebounce_images" id="marblebounce_images_0" onclick="openImagePopup(this.id)" src="static/games/marblebounce/SS/SS1.png"></li>
+                            <li><img class="marblebounce_images" id="marblebounce_images_1" onclick="openImagePopup(this.id)" src="static/games/marblebounce/SS/SS2.png"></li>
+                            <li><img class="marblebounce_images" id="marblebounce_images_2" onclick="openImagePopup(this.id)" src="static/games/marblebounce/SS/SS3.png"></li>
+                            <li><img class="marblebounce_images" id="marblebounce_images_3" onclick="openImagePopup(this.id)" src="static/games/marblebounce/SS/SS4.png"></li>
+                            <li><img class="marblebounce_images" id="marblebounce_images_4" onclick="openImagePopup(this.id)" src="static/games/marblebounce/SS/SS5.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Gift Run-->
+            <div class="game" id="giftrun_panel" style="display:none;">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/giftrun/giftrunlogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Gift Run &nbsp; <i class="fa-brands fa-android"></i> </span>
+                            <span class="game-info-text">Go as far as you can while avoiding the obstacles!
+                                Score high and unlock new gifts.
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Play On Mobile</li>
+                                    <li>Runner</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://play.google.com/store/apps/details?id=com.KnightGames.GiftRun" target="_blank">Play From <i class="fa-brands fa-google-play"></i>
+                                </a> </button>
+                                <ul>
+                                    <li><a href="https://knightgames.itch.io/gift-run" target="_blank"><i class="fa-brands fa-itch-io"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <ul>
+                            <li><img class="giftrun_images" id="giftrun_images_0" onclick="openImagePopup(this.id)" src="static/games/giftrun/SS/SS1.jpeg"></li>
+                            <li><img class="giftrun_images" id="giftrun_images_1" onclick="openImagePopup(this.id)" src="static/games/giftrun/SS/SS2.jpeg"></li>
+                            <li><img class="giftrun_images" id="giftrun_images_2" onclick="openImagePopup(this.id)" src="static/games/giftrun/SS/SS3.jpeg"></li>
+                            <li><img class="giftrun_images" id="giftrun_images_3" onclick="openImagePopup(this.id)" src="static/games/giftrun/SS/SS4.jpeg"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="page">
+            <div class="contact-box">
+                <span class="contact-header">Contact <i class="contact-icon fa fa-envelope"></i></span>
+                <span class="contact-mail">knight.games@yandex.com</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+   
+    <script>
+
+        //Navbar stick top
+        var navbar = document.getElementById("navbar");
+        window.onscroll = function() {updateNavbar()};
+        function updateNavbar() {
+            if (window.scrollY == 0) {
+                navbar.classList.remove("navbarScrolled");
+            } else {
+                navbar.classList.add("navbarScrolled");
+            }
+        }
+    
+        //Open image popup
+        var popup = document.getElementById("game-image-popup");
+        var popupImage = document.getElementById("popup-image");
+        function openImagePopup(id){
+            inputImage = document.getElementById(id);
+    
+            popup.style.display = "block";
+            popupImage.src = inputImage.src;
+            
+            popUpClass = String(inputImage.className);
+            popUpClassImages = document.getElementsByClassName(popUpClass);
+            currentImageNo = Number(id.split("_")[2]);
+        }
+    
+        //Close image popup
+        var popupCloseButton = document.getElementById("popup-close");
+        popupCloseButton.onclick = function() {
+            popup.style.display = "none";
+        }
+    
+        //Close popup by clicking outside of pop up
+        popup.onclick = function(event) {
+            if (event.target.id == "game-image-popup" || event.target.id == "") {
+                popup.style.display = "none";
+            }
+        }
+    
+        //Slider
+        var popUpClass; 
+        var currentImageNo; 
+        var popUpClassImages;
+        function slideLeft(){
+            var leftImageNo = --currentImageNo;
+            if(leftImageNo == -1){
+                leftImageNo = popUpClassImages.length-1;
+            }
+    
+            popupImage.src = document.getElementById(popUpClass+"_"+leftImageNo).src;
+            currentImageNo = leftImageNo;
+        }
+    
+        function slideRight(){
+            var rightImageNo = ++currentImageNo;
+            if(rightImageNo == popUpClassImages.length){
+                rightImageNo = 0;
+            }
+    
+            popupImage.src = document.getElementById(popUpClass+"_"+rightImageNo).src;
+            currentImageNo = rightImageNo;
+        }
+    
+        //Game Menu
+        var currentGameJamGame = document.getElementById("nomoresun_panel");;
+        function gameJamGameMenu(id){
+            currentGameJamGame.style.display = "none";
+            currentGameJamGame = document.getElementById(id+"_panel");
+            currentGameJamGame.style.display = "block";
+        }
+    
+        var currentMobileGame = document.getElementById("spiralracer_panel");;
+        function mobileGameMenu(id){
+            currentMobileGame.style.display = "none";
+            currentMobileGame = document.getElementById(id+"_panel");
+            currentMobileGame.style.display = "block";
+        }
+    
+    </script>
+
+</body>
+
+
+
+</html>

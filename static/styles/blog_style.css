@@ -1,0 +1,363 @@
+
+:root{
+    --white:  rgb(255, 255, 255);
+    --black:  rgb(0, 0, 0);
+    --colorBright: #cc0000;
+    --colorDark: #660000;
+    --bgColorDark: #0f0f0f;
+    --bgColorLight: #181818;
+ }
+
+@font-face { 
+    font-family: Gravity; 
+    src: url('../../fonts/GravityFont.otf'); 
+}
+
+@font-face { 
+    font-family: Gelato; 
+    src: url('../../fonts/Gelato-Script.otf'); 
+}
+
+*{
+    font-family: Gravity;
+    color: var(--white);
+}
+
+
+/* Body */
+body{
+    height: 100%;
+    width: 100vw;
+
+    overflow-x: hidden;
+    background-image: linear-gradient(to left,var(--colorDark), var(--colorBright));
+
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    color: var(--colorLight);
+    margin:0;
+    padding:0;
+
+}
+
+html{
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar{
+    transition: all 0.3s ease-in;
+}
+
+.navbarScrolled {
+    background-color: var(--bgColorDark); 
+    transition: all 0.3s ease-in;
+}
+
+
+.navbar ul{ 
+    margin-top: 5px;   
+    margin-bottom: 5px;   
+    margin-left: 50px;
+    margin-right: 50px; 
+
+    padding: 0;
+
+    list-style: none;
+
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    background-color: var(--bgColorDark);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.navbar ul li{ 
+    display:inline-flex;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: var(--white);
+}
+
+.nav-link:hover{
+  color: inherit;   
+  background-color: var(--bgColorLight);
+  transition: all 0.2s ease-in;
+}
+
+
+.navbar-left { 
+    float: left;
+}
+
+.navbar-right { 
+    float: right;
+}
+
+/* Header */
+.logo{ 
+    width: 100vw;
+    padding-top: 100px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.logo-left {
+    padding-left: 10vw;
+    float: left;
+    filter: drop-shadow(0 0 0.1rem var(--bgColorDark)) drop-shadow(0 0 0.5rem var(--bgColorDark)); 
+
+    font-size:75px;
+    font-family: Gelato;
+}
+
+.logo-right { 
+    padding-right: 10vw;
+    float: right;
+    filter: drop-shadow(0 0 0.2rem var(--bgColorDark)) drop-shadow(0 0 1rem var(--bgColorDark)); 
+
+    font-size: 20px;
+}
+
+/* Page */
+.page {
+    align-items: center;
+    justify-content: center; 
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--bgColorLight);
+    border-radius: 25px;
+
+    filter: drop-shadow(0 0 0.25rem var(--bgColorDark));
+}
+
+.entry{
+    width: 100%;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.entry-header{
+    padding-top: 115px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    margin-top: -100px;
+    margin-left: -50px;
+    margin-right: -50px;
+    background-color: var(--bgColorDark);
+
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.entry-content{
+    white-space: pre-line;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+
+.entry-content a{
+    color: var(--colorBright);
+}
+.entry-content i{
+    font-weight: bold;
+}
+
+.entry-subheader{
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-top: 20px;
+    
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: -50px;
+    margin-right: -50px;
+    background-color: var(--bgColorDark);
+}
+
+.entry-footer{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 115px;
+    margin-top: 15px;
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-bottom: -100px;
+    background-color: var(--bgColorDark);
+
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.entry-finale .entry-subheader{
+    font-family: Gelato;
+    font-weight: normal;
+    font-size: 35px;
+}
+.entry-finale .entry-signature{
+    font-family: Gelato;
+    font-size: 30px;
+}
+
+.entry-graphic{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    justify-content: center;
+
+    margin-bottom: 10px;
+}
+
+.entry-graphic-images{
+    display:block;
+}
+
+.entry-graphic-images-row{
+    display: flex;
+    flex-direction:row; 
+    align-items: center;  
+    justify-content: center;
+
+    max-height:35vh;
+    max-width: 60vw;
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.entry-graphic img{
+    max-height:35vh;
+    max-width: 60vw; 
+
+    overflow: hidden;
+    box-sizing: border-box;
+    filter: drop-shadow(0 0 1rem var(--bgColorDark));
+}
+
+.entry-graphic p{
+    padding-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.entries-header{
+    padding-top: 115px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    margin-top: -100px;
+    margin-left: -50px;
+    margin-right: -50px;
+    background-color: var(--bgColorDark);
+
+    width: 100%;
+
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.entries{
+    width: 100%;
+
+    display: block;
+    align-items: center;  
+    justify-content: center;
+
+}
+
+.entry-button{
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;  
+    text-align: center;
+    justify-content: left;
+
+    width: 95%;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--bgColorDark);
+    border-radius: 25px;
+
+    filter: drop-shadow(0 0 0.25rem var(--bgColorDark));
+    transition: 0.3s;
+}
+
+.entry-button:hover{
+    transform: scale(1.05);
+}
+
+.entry-button-date{
+    font-size: 20px;
+    padding-left: 2vw;
+}
+
+.entry-button-header{
+    font-size: 30px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .navbar{
+        flex-direction: column;
+        position: static;
+    }
+
+    .logo{
+        flex-direction: column;
+        position: static;
+        padding-top: 20px;
+    }
+
+    .logo-left {
+        padding-left: 0;
+        font-size:45px;
+    }
+    
+    .logo-right { 
+        padding-right: 0;
+        font-size: 20px;
+    }
+
+    .entry-button-date{
+        font-size: 16px;
+    }
+    
+    .entry-button-header{
+        font-size: 20px;
+    }
+    
+}

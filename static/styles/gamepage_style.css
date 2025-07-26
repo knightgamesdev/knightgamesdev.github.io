@@ -1,0 +1,404 @@
+
+:root{
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* Body */
+body{
+    height: 100%;
+    width: 100%;
+
+    overflow-x: hidden;
+    background: linear-gradient(to top,rgb(from var(--themeColor) r g b / 50%),rgba(0,0,0,0), transparent) ,
+    var(--backgroundImage); 
+
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    color: var(--colorLight);
+    margin:0;
+    padding:0;
+}
+
+/* Navbar */
+
+.navbar{
+    margin-top: 10px;    
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar ul{ 
+    padding: 0;
+
+    list-style: none;
+
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    background-color: rgb(from var(--colorDark) r g b / 75%);
+    border-radius: 15px;
+}
+
+.navbar ul li{ 
+    display:inline-flex;
+}
+
+.nav-link{
+    font-size: 25px;
+    color: var(--colorLight);
+    letter-spacing: 1px;
+    
+    transition-duration: 0.4s;
+}
+
+.nav-link:hover{
+    color: rgb(from var(--colorLight) r g b / 50%);
+}
+
+.navbar-left { 
+    float: left;
+}
+
+.navbar-right { 
+    float: right;
+}
+
+
+/* Home */
+
+.game-logo{
+    padding-top: 2.5vh;
+    max-height: 25vh;
+    min-width: 25vh;
+    max-width: 25vw;
+    width: auto;
+    height: auto;
+    filter: drop-shadow(0 0 1rem var(--colorDark));
+}
+
+.game-links {
+    padding-top:4vh;
+}
+
+.game-links ul{
+    padding-left:0;
+    margin-bottom:0;
+    list-style: none;
+
+    display: inline-flex;
+}
+
+.game-links li{
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    filter: drop-shadow(0 0 1rem var(--black));
+}
+
+.game-link {
+    transition-duration: 0.4s;
+}
+
+.game-link:hover {
+    transform: scale(1.2);
+}
+
+.game-link a{
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+    color: var(--colorLight);
+}
+
+.game-link-logo {
+    font-size: 40px;
+    margin-bottom: -15px;
+}
+
+.game-link-name{
+    font-size: 22.5px;
+}
+
+.game-info{
+    width: 55vw;
+    max-width: 1000px;
+    min-width: 500px;
+    margin: auto;
+    margin-top: 2.5vh;
+    padding: 15px;
+
+    background-color: rgb(from var(--colorDark) r g b / 75%);
+    border-radius: 50px;
+}
+
+.game-info span{
+    font-size: 22.5px;
+    letter-spacing: 0.5px;
+    color: var(--colorLight);
+}
+
+.game-info img{
+    
+    width: 75%;
+}
+
+.game-video{
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.game-video iframe{
+    width: 64vh;
+    height: 36vh;
+
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.game-video img{
+    width: 64vh;
+    height: 36vh;
+
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.game-section-header{
+    color: var(--colorLight);
+    font-size: 60px;
+    letter-spacing: 2.5px;
+    filter: drop-shadow(0 0 1rem var(--colorDark));
+}
+
+
+
+/* Gameplay Videos */
+
+.game-videos{
+    padding-top: 50px;
+    background:linear-gradient(to bottom, rgba(0,0,0,0), rgb(from var(--colorDark) r g b / 30%), rgba(0,0,0,0) );
+}
+
+.game-videos ul{
+    padding-top: 50px;
+
+    padding-left:0;
+    margin-bottom:0;
+    list-style: none;
+
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.game-videos li{
+    display: inline-flex;
+    padding: 2vw;
+}
+
+/* Images */
+.game-images{
+    padding-top: 50px;
+    background-color: rgb(from var(--themeColor) r g b / 10%);
+}
+
+
+.game-images ul{
+    padding-top: 50px;
+
+    padding-left:0;
+    margin-bottom:0;
+    list-style: none;
+
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.game-images li{
+    display: inline-flex;
+    padding: 2vw;
+}
+
+.game-images img{
+    width: 30vw;
+    transition: 0.3s;
+}
+
+.game-images img:hover{
+    opacity: 0.9;
+}
+
+
+.game_image{
+    cursor: pointer;
+}
+
+
+
+/*#region Popup*/
+
+.game-image-popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+    z-index: 10000; 
+}
+
+.popup-close{
+    font-size: 50px;
+    padding-right: 50px;
+    float: right;
+}
+
+.popup-close:hover,
+.popup-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-content{
+    display: flex;
+}
+
+.popup-arrow-left{
+    font-size: 50px;
+    padding-top: 40vh;
+    padding-left: 50px;
+}
+
+.popup-arrow-left:hover,
+.popup-arrow-left:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-arrow-right{
+    font-size: 50px;
+    padding-top: 40vh;
+    padding-right: 50px;
+}
+
+.popup-arrow-right:hover,
+.popup-arrow-right:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-arrow-lowres{
+    display: none; 
+}
+
+.popup-image {
+  padding-top: 75px;
+  padding-left: 75px;
+  margin: auto;
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 80vh;
+  max-width: 80vw;
+}
+
+
+/*#endregion Popup*/
+
+@media screen and (max-width: 1150px) {
+    .popup-image{
+        padding-top: 20vh;
+    }
+
+    .popup-arrow-lowres{
+        display: block;
+        text-align: center;
+    }
+
+    .popup-arrow-lowres .popup-arrow-left{
+        padding: 30px;
+    }
+
+    .popup-arrow-lowres .popup-arrow-right{
+        padding: 30px;
+    }
+
+    .popup-arrow-highres{
+        display: none; 
+    }
+
+ 
+}
+
+/*#endregion Popup*/
+
+#home{
+    height: 100vh;
+    width: 100vw;
+}
+
+#gameplay-videos{
+    margin-top: 100px;
+    height: 100%;
+    width: 100vw;
+}
+
+#images{
+    margin-top: 100px;
+    height: 100%;
+    width: 100vw;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 1150px) {
+    .navbar{
+        flex-direction: column;
+        position: static;
+    }
+
+    .nav-link{
+        font-size: 20px;
+    }
+
+    .game-link-logo {
+        font-size: 30px;
+        margin-bottom: -5px;
+    }
+    
+    .game-link-name{
+        font-size: 20px;
+    }
+
+    .game-info{
+        min-width: 300px;
+    }
+
+    .game-info span{
+        font-size: 15px;
+    }
+
+ 
+}
+
+
+
