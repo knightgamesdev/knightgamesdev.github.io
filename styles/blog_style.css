@@ -10,12 +10,12 @@
 
 @font-face { 
     font-family: Gravity; 
-    src: url('../../fonts/GravityFont.otf'); 
+    src: url('../fonts/GravityFont.otf'); 
 }
 
 @font-face { 
     font-family: Gelato; 
-    src: url('../../fonts/Gelato-Script.otf'); 
+    src: url('../fonts/Gelato-Script.otf'); 
 }
 
 *{
