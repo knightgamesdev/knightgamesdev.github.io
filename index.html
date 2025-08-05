@@ -185,6 +185,7 @@
                 <span class="game-menu-header">Game Jam Games &nbsp;<i class="fa-solid fa-jar"></i></span>  
                 <div class="game-menu-games"> 
                     <ul>
+                        <li><img src="static/games/instructionset/instructionsetlogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="instructionset"></li>
                         <li><img src="static/games/nomoresun/nomoresunlogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="nomoresun"></li>
                         <li><img src="static/games/yolunuaydinlat/yolunuaydinlatlogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="yolunuaydinlat"></li>
                         <li><img src="static/games/dimensionup/dimensionuplogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="dimensionup"></li>
@@ -198,10 +199,49 @@
                         <li><img src="static/games/cepheyeyolculuk/cepheyeyolculuklogo.png" onclick="gameJamGameMenu(this.id)" class="game-menu-logo" id="cepheyeyolculuk"></li>
                     </ul>
                 </div>   
-            </div>              
+            </div>          
+            
+            <!--Dimension Up-->
+            <div class="game" id="instructionset_panel">
+                <div class="topgamebox">
+                    <div class="gamebox">
+                        <div>
+                            <img src="static/games/dimensionup/instructionsetlogo.png" class="gamelogosub">
+                        </div>                  
+                        <div class="game-info">
+                            <span class="game-info-header">Instruction &nbsp; <i class="fa-brands fa-windows"></i> </span>
+                            <span class="game-info-text">Enter the instructions and run them in a loop to reach the end!
+                            </span>
+                            <div class="game-tags">
+                                <ul>
+                                    <li>Puzzle</li>
+                                    <li>Low poly</li>
+                                </ul>
+                            </div>
+                            <div class="game-links">
+                                <button class="game-links-button"> 
+                                    <a href="https://knightgames.itch.io/instruction-set" target="_blank">Play From <i class="fa-brands fa-itch-io"></i>
+                                </a> </button>
+                                
+                                <ul>
+                                    <li> &nbsp; </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-media">
+                        <ul>
+                            <li><img class="instructionset_images" id="instructionset_images_0" onclick="openImagePopup(this.id)" src="static/games/instructionset/SS/SS1.png"></li>
+                            <li><img class="instructionset_images" id="instructionset_images_1" onclick="openImagePopup(this.id)" src="static/games/instructionset/SS/SS2.png"></li>
+                            <li><img class="instructionset_images" id="instructionset_images_2" onclick="openImagePopup(this.id)" src="static/games/instructionset/SS/SS3.png"></li>
+                            <li><img class="instructionset_images" id="instructionset_images_3" onclick="openImagePopup(this.id)" src="static/games/instructionset/SS/SS4.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             
             <!--No More Sun-->
-            <div class="game" id="nomoresun_panel">
+            <div class="game" id="nomoresun_panel"  style="display:none;"">
                 <div class="topgamebox">
                     <div class="gamebox">
                         <div>
@@ -891,7 +931,7 @@
         }
     
         //Game Menu
-        var currentGameJamGame = document.getElementById("nomoresun_panel");;
+        var currentGameJamGame = document.getElementById("instructionset_panel");;
         function gameJamGameMenu(id){
             currentGameJamGame.style.display = "none";
             currentGameJamGame = document.getElementById(id+"_panel");
