@@ -771,6 +771,10 @@ body{
         font-size: 25px;
         width: 200px;
     }
+    
+    .game-button a{
+        width: 100%;
+    }
 
     .game-media{
         margin-left: 0;
